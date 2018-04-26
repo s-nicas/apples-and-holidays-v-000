@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts items
     if items.instance_of? Hash
       items.each do |holiday, inside|
-        
+
         puts "#{holiday}: #{inside}"
         binding.pry
          if inside.instance_of? Array
