@@ -75,16 +75,28 @@ end
 #   end
 # end
 
+def split(string)
+  new = " "
+  if string.include?('_')
+    words = string.split('_')
+      new = words.collect do |word|
+        word.capitalize
+    end 
+  return new.join(" ") 
+  end
+end 
+
+
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |items, day|
- puts "#{items.capitalize}:"
-    day.each do |holiday, list|
-
-        puts "  #{holiday.capitalize}: #{list.join(", ")}"
-      # if holiday == :new_years || holiday ==:fourth_of_july || holiday ==  :memorial_day
-      # puts holiday.split('_')
-
-
+    puts "#{items.capitalize}:"
+      day.each do |holiday, list|
+        string =holiday.to_s 
+          if (string).include?('_')
+        puts "  #{split(string)}: #{list.join(", ")}"
+          else 
+        puts "  #{string.capitalize}: #{list.join(", ")}"
+          end 
       end
     end
   end
