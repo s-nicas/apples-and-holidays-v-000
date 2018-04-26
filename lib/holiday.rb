@@ -81,8 +81,8 @@ def all_supplies_in_holidays(holiday_hash)
     day.each do |holiday, list|
 
       list.each do |wreath|
-        binding.pry
 
+puts holdiay: list 
       end
     end
   end
