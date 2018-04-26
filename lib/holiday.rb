@@ -82,7 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
 
       list.each do |wreath|
         binding.pry
-        
+
       end
     end
   end
