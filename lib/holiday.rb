@@ -80,9 +80,9 @@ def all_supplies_in_holidays(holiday_hash)
 
     day.each do |holiday, list|
 
-      list.each do |supplies|
-        binding.pry 
-        puts supplies
+      list.each do |wreath|
+        binding.pry
+        
       end
     end
   end
