@@ -62,7 +62,7 @@ end
 #     puts items
 #     if items.instance_of? Object
 #       items.each do |holiday, inside|
-# 
+#
 #         puts "#{holiday}: #{inside}"
 #         binding.pry
 #          if inside.instance_of? Array
@@ -78,11 +78,12 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |items|
     items.each do |holiday, supplies|
+      binding.pry
       supplies.each do |supplies|
-        puts supplies 
-      end 
-    end 
-  end 
+        puts supplies
+      end
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
