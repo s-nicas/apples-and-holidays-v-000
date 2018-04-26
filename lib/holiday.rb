@@ -58,7 +58,7 @@ def split(string)
       new = words.collect do |word|
         word.capitalize
     end
-  return new.join(" ")
+  new.join(" ")
   end
 end
 
@@ -76,5 +76,9 @@ def all_supplies_in_holidays(holiday_hash)
       end
     end
   end
+
+  def holiday_supplies_hash
+
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  end 
