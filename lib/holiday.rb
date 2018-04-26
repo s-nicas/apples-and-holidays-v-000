@@ -39,10 +39,15 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
-  # return an array of all of the supplies that are used in the winter season
+    # return an array of all of the supplies that are used in the winter season
+  all_winter_decor=[]
+
   holiday_hash[:winter].each do |holiday, decor|
-    puts decor
-   end
+    decor.each do|supplies|
+      all_winter_decor.push(supplies)
+     end 
+    end
+  all_winter_decor
 end
 
 def all_supplies_in_holidays(holiday_hash)
@@ -53,6 +58,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+  holiday_hash.each do |item|
 
 end
 
