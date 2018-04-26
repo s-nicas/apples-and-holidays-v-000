@@ -77,18 +77,17 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |items, day|
-
+ puts "#{items.capitalize}:" 
     day.each do |holiday, list|
+      
+        puts "  #{holiday}: #{list.join(", ")}"
+      # if holiday == :new_years || holiday ==:fourth_of_july || holiday ==  :memorial_day
+      # puts holiday.split('_')
 
-      list.each do |wreath|
-
-puts holdiay: list 
+      
       end
     end
   end
-end
-
-def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 
