@@ -58,12 +58,26 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  
+  holiday_hash.each do |items|
+    puts items
+    if items.instance_of? Hash
+      items.each do |holiday, inside|
+        puts "#{holiday}: #{inside}"
+         if inside.instance_of? Array
+           inside.each do |decor|
+             puts decor
+           end
+         end 
+       end 
+     end 
+  end 
+end
 
 end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  
 
 end
