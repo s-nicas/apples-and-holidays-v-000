@@ -60,19 +60,19 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |items|
     puts items
-    if items.instance_of? Object
-      items.each do |holiday, inside|
-
-        puts "#{holiday}: #{inside}"
-        binding.pry
-         if inside.instance_of? Array
-           inside.each do |decor|
-             puts decor
-           end
-         end
-       end
+    # if items.instance_of? Object
+    #   items.each do |holiday, inside|
+    #
+    #     puts "#{holiday}: #{inside}"
+    #     binding.pry
+    #      if inside.instance_of? Array
+    #        inside.each do |decor|
+    #          puts decor
+    #        end
+    #      end
+    #    end
      end
-  end
+  # end
 end
 
 
