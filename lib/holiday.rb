@@ -50,7 +50,7 @@ def all_winter_holiday_supplies(holiday_hash)
   all_winter_decor
 end
 
-#helper method 
+#helper method
 def split(string)
   new = " "
   if string.include?('_')
