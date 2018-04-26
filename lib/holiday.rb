@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
  puts "#{items.capitalize}:"
     day.each do |holiday, list|
 
-        puts "  #{holiday}: #{list.join(", ")}"
+        puts "  #{holiday.capitalize}: #{list.join(", ")}"
       # if holiday == :new_years || holiday ==:fourth_of_july || holiday ==  :memorial_day
       # puts holiday.split('_')
 
