@@ -34,7 +34,6 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
 def add_supply_to_memorial_day(holiday_hash, supply)
 
   holiday_hash[:spring].collect do |holiday, decor|
-    binding.pry
     decor.push(supply)
   end
 
