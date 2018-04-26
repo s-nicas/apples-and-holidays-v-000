@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |items|
     puts items
-    if items.instance_of? Hash
+    if items.instance_of? Object
       items.each do |holiday, inside|
 
         puts "#{holiday}: #{inside}"
