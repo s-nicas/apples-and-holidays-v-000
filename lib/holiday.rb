@@ -46,7 +46,7 @@ def all_winter_holiday_supplies(holiday_hash)
     decor.each do|supplies|
       all_winter_decor.push(supplies)
      end
-    end
+  end
   all_winter_decor
 end
 
