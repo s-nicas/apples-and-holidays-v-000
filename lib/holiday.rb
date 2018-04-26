@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
     items.each do |holiday, supplies|
 binding.pry
       supplies.each do |supplies|
-        
+
         puts supplies
       end
     end
