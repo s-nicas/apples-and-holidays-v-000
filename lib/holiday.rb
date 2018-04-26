@@ -50,31 +50,7 @@ def all_winter_holiday_supplies(holiday_hash)
   all_winter_decor
 end
 
-# def all_supplies_in_holidays(holiday_hash)
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
-#   holiday_hash.each do |items|
-#     puts items
-#     if items.instance_of? Object
-#       items.each do |holiday, inside|
-#
-#         puts "#{holiday}: #{inside}"
-#         binding.pry
-#          if inside.instance_of? Array
-#            inside.each do |decor|
-#              puts decor
-#            end
-#          end
-#        end
-#      end
-#   end
-# end
-
+#helper method 
 def split(string)
   new = " "
   if string.include?('_')
@@ -91,11 +67,11 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |items, day|
     puts "#{items.capitalize}:"
       day.each do |holiday, list|
-        string =holiday.to_s
-          if (string).include?('_')
-        puts "  #{split(string)}: #{list.join(", ")}"
+        string_holiday =holiday.to_s
+          if (string_holiday).include?('_')
+        puts "  #{split(string_holiday)}: #{list.join(", ")}"
           else
-        puts "  #{string.capitalize}: #{list.join(", ")}"
+        puts "  #{string_holiday.capitalize}: #{list.join(", ")}"
           end
       end
     end
