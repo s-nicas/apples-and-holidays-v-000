@@ -81,22 +81,22 @@ def split(string)
     words = string.split('_')
       new = words.collect do |word|
         word.capitalize
-    end 
-  return new.join(" ") 
+    end
+  return new.join(" ")
   end
-end 
+end
 
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |items, day|
     puts "#{items.capitalize}:"
       day.each do |holiday, list|
-        string =holiday.to_s 
+        string =holiday.to_s
           if (string).include?('_')
         puts "  #{split(string)}: #{list.join(", ")}"
-          else 
+          else
         puts "  #{string.capitalize}: #{list.join(", ")}"
-          end 
+          end
       end
     end
   end
